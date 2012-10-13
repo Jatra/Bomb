@@ -16,9 +16,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 		mLimit = new Limit();
 		
-		mLimit.addCapability("newsfeedx","Oct 11, 2012");
+		mLimit.addCapability("newsfeed","Oct 11, 2012");
 		
 		TextView tv = (TextView)findViewById(R.id.tv);
-		tv.setText("Expired: "+mLimit.isExpired("newsfeed"));
+		tv.setText("newsfeed Expired: "+mLimit.isExpired("newsfeed"));
     }
 }
